@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class BinarySearchRunner
 {
   public static void main(String[] args)
@@ -11,11 +13,11 @@ public class BinarySearchRunner
     // test when the target is in the middle (found on the first try!)
     int idx = BinarySearch.binarySearch(arr, 23);
     System.out.println("the number 23 was found! it is located at index: " + idx);
-    
+
     // test when the target is found after TWO iterations 
     idx = BinarySearch.binarySearch(arr, 55);
     System.out.println("the number 55 was found! it is located at index: " + idx);
-    
+
     // test when the target is found after THREE iterations 
     idx = BinarySearch.binarySearch(arr, 14);
     System.out.println("the number 14 was found! it is located at index: " + idx);
@@ -23,7 +25,7 @@ public class BinarySearchRunner
     // test when the target is found after FOUR iterations (max for array size)
     idx = BinarySearch.binarySearch(arr, 81);
     System.out.println("the number 81 was found! it is located at index: " + idx);
- 
+
     // test when the target is found after FOUR iterations (max for array size)
     idx = BinarySearch.binarySearch(arr, 17);
     System.out.println("the number 17 was found! it is located at index: " + idx);
@@ -93,5 +95,18 @@ public class BinarySearchRunner
     System.out.println(index);
     System.out.println("----------------------------------------------------");
 
+    /*System.out.println(Arrays.binarySearch(arr, 23));
+    System.out.println(Arrays.binarySearch(arr, 55));
+    System.out.println(Arrays.binarySearch(arr, 14));
+    System.out.println(Arrays.binarySearch(arr, 81));
+    System.out.println(Arrays.binarySearch(arr, 17));
+    System.out.println(Arrays.binarySearch(arr, -10));
+    System.out.println(Arrays.binarySearch(arr, 108));
+    System.out.println(Arrays.binarySearch(arr, 13));*/
+
+    double[] arr2 = {2.3, 5.6, 6.1, 10.7, 22.9, 38.5, 40.1, 69.9};
+    System.out.println(Arrays.binarySearch(arr, 3));
+    System.out.println(Arrays.binarySearch(arr, 1));
+    System.out.println(Arrays.binarySearch(arr, 2));
   }
 }
